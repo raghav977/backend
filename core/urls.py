@@ -21,7 +21,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('products/',include('product.urls')),
     path('category/',include('category.urls')),
-    path('sales/',include('sales.urls')),
+    # path('',include('sales.urls')),
+    path('sales/', include('sales.urls')),
+
     
     path('dashboard/',include('apis.urls')),
 ]
